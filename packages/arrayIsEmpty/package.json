@@ -5,13 +5,10 @@
     "access": "public"
   },
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.js",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "types": "index.d.js",
   "scripts": {
-    "build": "npx tsc -b .",
+    "build": "../../bin/build.sh",
     "clean": "rm -rf dist",
     "test": "npx jest"
   }

@@ -8,7 +8,8 @@
       "yes": true,
       "message": "chore: automated deploy packages [skip ci]",
       "noPrivate": true,
-      "createRelease": "github"
+      "createRelease": "github",
+      "contents": "dist"
     }
   }
 }
