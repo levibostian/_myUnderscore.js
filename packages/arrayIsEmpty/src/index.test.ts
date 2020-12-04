@@ -1,4 +1,4 @@
-import { _arrayIsEmpty } from "."
+import _arrayIsEmpty from "."
 
 describe("_arrayIsEmpty", () => {
   it(`given an empty array, expect true`, async () => {
