@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.1 (2020-12-04)
+
+
+### Bug Fixes
+
+* chnage export ([903e33c](https://github.com/levibostian/my_/commit/903e33ce914cd06903b1cb50a0e91d3be84c225e))
+
+
+
+
+
 # 0.4.0 (2020-12-04)
 
 
