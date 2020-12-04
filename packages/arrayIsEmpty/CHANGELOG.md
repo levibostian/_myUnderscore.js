@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2020-12-04)
+
+
+### Features
+
+* go 1.0 ([ee81dd5](https://github.com/levibostian/my_/commit/ee81dd507a35424979364b899a612a7f25ffea3e))
+
+
+
+
+
 # 0.4.0 (2020-12-04)
 
 
