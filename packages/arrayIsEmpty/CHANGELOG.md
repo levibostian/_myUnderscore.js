@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.4.0 (2020-12-04)
+
+
+### Features
+
+* fake commit to trigger deploy ([b630f8c](https://github.com/levibostian/my_/commit/b630f8ce51962dde4ba38a57ae04add6cdb1cf99))
+
+
+
+
+
 ## 0.3.1 (2020-12-04)
 
 **Note:** Version bump only for package @levibostian/my_arrayisempty
