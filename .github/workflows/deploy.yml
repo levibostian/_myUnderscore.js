@@ -37,11 +37,15 @@ jobs:
         run: | 
           echo "NPM_DIST_TAG=beta" >> $GITHUB_ENV
       - name: Build 
-        run: npm run build
+        # Must call `lerna version` before building or built package.json files will not have updated versions after building. 
+        # Building simply makes the `dist/` directories to be published.         
+        run: |
+          npx lerna version
+          npm run build
       - name: Deploy
         env:
           GH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo          
         run: |
           git config user.email ${{ env.GIT_EMAIL }}
           git config user.name ${{ env.GIT_USERNAME }}
-          npx lerna publish --dist-tag ${{ env.NPM_DIST_TAG }}
+          npx lerna publish from-git --dist-tag ${{ env.NPM_DIST_TAG }}
