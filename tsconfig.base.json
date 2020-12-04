@@ -1,9 +1,9 @@
 {
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2018",
-    "lib": ["es2018", "dom"],
-    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
     "rootDir": ".",
     "baseUrl": "./packages",
     "composite": true,
