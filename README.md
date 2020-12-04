@@ -1,8 +1,24 @@
-# my\_
+# my_
 
 My opinionated version of lodash. A set of utility functions that make Typescript/Javascript life easier.
 
 Feel free to use these if you wish. These functions are generic enough that every project may have a use for a function. However, know that I am not looking for this project to become a large community driven project at this time.
+
+# Modules 
+
+| Function name | Module name | Description | Bundle size |
+| :------------ | :---------- | :---------- | :---------: |
+| `_isNullOrUndefined` | `@levibostian/my_isnullorundefined` | Is the parameter `undefined` or `null`? | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_isnullorundefined) |
+
+### Arrays
+
+| Function name | Module name | Description | Bundle size |
+| :------------ | :---------- | :---------- | :---------: |
+| `_arrayIsEmpty` | `@levibostian/my_arrayisempty` | Determine is an Array is empty or not | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_arrayisempty) | 
+
+# Documentation
+
+Check out the tests for each function you're interested in to see more details on how to use this project. 
 
 # Style of this project
 
@@ -18,11 +34,11 @@ The naming is done this way because if we have a function named `isEmpty()`, tha
 
 ```ts
 // GOOD
-import _arrayIsEmpty from "@levibostian/my_arrayIsEmpty"
+import _arrayIsEmpty from "@levibostian/my_arrayisempty"
 
 // BAD
-import { _arrayIsEmpty } from "@levibostian/my_arrayIsEmpty"
-import * as _arrayIsEmpty from "@levibostian/my_arrayIsEmpty"
+import { _arrayIsEmpty } from "@levibostian/my_arrayisempty"
+import * as _arrayIsEmpty from "@levibostian/my_arrayisempty"
 ```
 
 # Development
@@ -46,10 +62,6 @@ Then, open up the root directory of the project in VSCode (recommended for types
 - Easy formatting, linting, and testing. Running `npm run lint` at the root will lint _all_ of the separate modules.
 - Debugging of original Typescript code in VSCode. Hit breakpoints in the Typescript code.
 - Each individual module have their own, separate, semantic version. This way if one module has a major version jump the other modules do not need to have the jump on them causing developer confusion and pains.
-
-### Bonus features
-
-- [Typescript incremental builds](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html) for faster builds during development
 
 # Credits
 
