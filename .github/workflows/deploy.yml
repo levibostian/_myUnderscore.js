@@ -9,6 +9,7 @@ env:
   NPM_RC: ${{ secrets.NPM_RC }} # on your local machine, `npm login && cat ~/.npmrc | base64`
   GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
   GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+  GH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo. `GH_TOKEN` syntax is asked by lerna
 
 jobs:
   deploy:
@@ -39,13 +40,11 @@ jobs:
       - name: Build 
         # Must call `lerna version` before building or built package.json files will not have updated versions after building. 
         # Building simply makes the `dist/` directories to be published.         
-        run: |
-          npx lerna version
-          npm run build
-      - name: Deploy
-        env:
-          GH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo          
+        # git config required for lerna version
         run: |
           git config user.email ${{ env.GIT_EMAIL }}
           git config user.name ${{ env.GIT_USERNAME }}
-          npx lerna publish from-git --dist-tag ${{ env.NPM_DIST_TAG }}
+          npx lerna version
+          npm run build
+      - name: Deploy
+        run: npx lerna publish from-git --dist-tag ${{ env.NPM_DIST_TAG }}
