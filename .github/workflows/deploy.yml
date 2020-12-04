@@ -1,0 +1,45 @@
+name: Deployment 
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+env:
+  NPM_RC: ${{ secrets.NPM_RC }} # on your local machine, `npm login && cat ~/.npmrc | base64`
+  GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+  GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+
+jobs:
+  deploy:
+    name: Deploy to npm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+        id: nvm
+      - name: Setup node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '${{ steps.nvm.outputs.NODE_VERSION }}'
+      - name: Install dependencies
+        run: npm install && npm run install 
+      - name: set env vars      
+        # NPM_DIST_TAG - set default value I may change later 
+        run: |
+          echo "NPM_DIST_TAG=latest" >> $GITHUB_ENV 
+          echo "BRANCH_NAME=$(echo "${GITHUB_REF##*/}")" >> $GITHUB_ENV
+      - name: npm authentication 
+        run: echo "$NPM_RC" | base64 --decode > ~/.npmrc 
+      - name: edit npm dist-tag 
+        if: env.BRANCH_NAME == 'beta'
+        run: | 
+          echo "NPM_DIST_TAG=beta" >> $GITHUB_ENV
+      - name: Deploy
+        env:
+          GH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo          
+        run: |
+          git config user.email ${{ env.GIT_EMAIL }}
+          git config user.name ${{ env.GIT_USERNAME }}
+          npx lerna publish --dist-tag ${{ env.NPM_DIST_TAG }}

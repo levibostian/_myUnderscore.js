@@ -1,0 +1,20 @@
+{
+  "name": "@levibostian/my_arrayisempty",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsc -b .",
+    "clean": "rm -rf dist",
+    "test": "npx jest"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

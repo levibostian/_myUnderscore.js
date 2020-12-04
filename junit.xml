@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="1.58">
+  <testsuite name="_arrayIsEmpty" errors="0" failures="0" skipped="0" timestamp="2020-12-04T18:29:18" time="1.515" tests="6">
+    <testcase classname="_arrayIsEmpty given an empty array, expect true" name="_arrayIsEmpty given an empty array, expect true" time="0.002">
+    </testcase>
+    <testcase classname="_arrayIsEmpty given array not empty, expect false" name="_arrayIsEmpty given array not empty, expect false" time="0">
+    </testcase>
+    <testcase classname="_arrayIsEmpty given an object, expect throw" name="_arrayIsEmpty given an object, expect throw" time="0.001">
+    </testcase>
+    <testcase classname="_arrayIsEmpty given a string, expect throw" name="_arrayIsEmpty given a string, expect throw" time="0.001">
+    </testcase>
+    <testcase classname="_arrayIsEmpty given undefined and null, expect throw" name="_arrayIsEmpty given undefined and null, expect throw" time="0.004">
+    </testcase>
+    <testcase classname="_arrayIsEmpty given null, expect throw" name="_arrayIsEmpty given null, expect throw" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

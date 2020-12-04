@@ -1,0 +1,14 @@
+{
+  "lerna": "2.11.0",
+  "packages": ["packages/*"],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "yes": true,
+      "message": "chore: automated deploy packages [skip ci]",
+      "noPrivate": true,
+      "createRelease": "github"
+    }
+  }
+}
