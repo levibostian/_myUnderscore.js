@@ -3,12 +3,14 @@
   "packages": ["packages/*"],
   "version": "independent",
   "command": {
-    "publish": {
+    "version": {
       "conventionalCommits": true,
-      "yes": true,
       "message": "chore: automated deploy packages [skip ci]",
       "noPrivate": true,
-      "createRelease": "github",
+      "createRelease": "github"
+    },
+    "publish": {
+      "yes": true,
       "contents": "dist"
     }
   }
