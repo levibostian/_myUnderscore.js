@@ -36,6 +36,8 @@ jobs:
         if: env.BRANCH_NAME == 'beta'
         run: | 
           echo "NPM_DIST_TAG=beta" >> $GITHUB_ENV
+      - name: Build 
+        run: npm run build
       - name: Deploy
         env:
           GH_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo          
