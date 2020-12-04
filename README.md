@@ -15,6 +15,7 @@ Feel free to use these if you wish. These functions are generic enough that ever
 | Function name | Module name | Description | Bundle size |
 | :------------ | :---------- | :---------- | :---------: |
 | `_arrayIsEmpty` | `@levibostian/my_arrayisempty` | Determine is an Array is empty or not | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_arrayisempty) | 
+| `_arrayLast` | `@levibostian/my_arraylast` | Get the last item in the Array, or `undefined` | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_arraylast) | 
 
 # Documentation
 
