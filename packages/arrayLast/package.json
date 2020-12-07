@@ -11,5 +11,8 @@
     "build": "../../bin/build.sh",
     "clean": "rm -rf dist",
     "test": "npx jest"
+  },
+  "dependencies": {
+    "@levibostian/my_isemptyorblank": "^1.0.0"
   }
 }

@@ -1,9 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "tsBuildInfoFile": "../../.build-cache/isNullOrUndefined.tsbuildinfo"
+    "rootDir": ".",
+    "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["index.ts", "index.test.ts"]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@levibostian/my_isnullorundefined",
+  "name": "@levibostian/my_mapall",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
@@ -13,9 +13,7 @@
     "test": "npx jest"
   },
   "dependencies": {
-    "lodash.isnil": "^4.0.0"
-  },
-  "devDependencies": {
-    "@types/lodash.isnil": "^4.0.6"
+    "@levibostian/my_isobject": "1.0.0",
+    "@levibostian/my_isnullorundefined": "1.0.0"
   }
 }

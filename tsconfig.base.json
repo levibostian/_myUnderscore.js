@@ -9,9 +9,6 @@
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
-    "paths": {
-      "@levibostian/*": ["./*/src"]
-    }
+    "sourceMap": true
   }
 }
