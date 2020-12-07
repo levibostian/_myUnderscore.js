@@ -13,7 +13,7 @@
     "test": "npx jest"
   },
   "dependencies": {
-    "@levibostian/my_isobject": "1.0.0",
-    "@levibostian/my_isnullorundefined": "1.0.0"
+    "@levibostian/my_isobject": "^1.0.0",
+    "@levibostian/my_isnullorundefined": "^1.0.0"
   }
 }

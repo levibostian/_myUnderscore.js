@@ -21,6 +21,7 @@ The problems I face are...
 | Function name | Module name | Description | Bundle size |
 | :------------ | :---------- | :---------- | :---------: |
 | `_allSequential` | `@levibostian/my_allsequential` | Run array of Promises, in order, and get Array of results back. | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_allsequential) | 
+| `_arrayIncludesFind` | `@levibostian/my_arrayincludesfind` | See is an Array includes an item by using a provided function. | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_arrayincludesfind) | 
 | `_arrayLast` | `@levibostian/my_arraylast` | Get the last item of Array or `undefined` if empty | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_arraylast) | 
 | `_dateSortNewToOld` | `@levibostian/my_datesortnewtoold` | Array [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) function to sort Dates Array from new to old (newest first index). | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_datesortnewtoold) | 
 | `_dateSortOldToNew` | `@levibostian/my_datesortoldtonew` | Array [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) function to sort Dates Array from old to new (oldest first index). | ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@levibostian/my_datesortoldtonew) | 
