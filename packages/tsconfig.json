@@ -1,4 +1,10 @@
 {
   "files": [],
-  "references": [{ "path": "./arrayIsEmpty" }]
+  "references": [
+    { "path": "./arrayLast" },
+    { "path": "./isEmptyOrBlank" },
+    { "path": "./isNullOrUndefined" },
+    { "path": "./isObject" },
+    { "path": "./mapAll" }
+  ]
 }

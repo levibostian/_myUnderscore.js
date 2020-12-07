@@ -1,0 +1,16 @@
+{
+  "name": "@levibostian/my_isemptyorblank",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.js",
+  "scripts": {
+    "build": "../../bin/build.sh",
+    "clean": "rm -rf dist",
+    "test": "npx jest"
+  },
+  "dependencies": {}
+}

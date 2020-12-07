@@ -1,6 +1,6 @@
 {
-  "name": "@levibostian/my_arrayisempty",
-  "version": "1.1.2",
+  "name": "@levibostian/my_datesortnewtoold",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -11,5 +11,6 @@
     "build": "../../bin/build.sh",
     "clean": "rm -rf dist",
     "test": "npx jest"
-  }
+  },
+  "dependencies": {}
 }
